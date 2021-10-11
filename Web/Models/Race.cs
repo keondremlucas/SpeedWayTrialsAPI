@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+namespace Web
+{
+    public class Race
+    {
+        public Guid Id {get; set;}
+
+        public string Name {get; set;}
+        public RaceCategory Category {get; set;}
+        public DateTime Date {get; set;}
+        public Time BestTime {get; set;}
+        public Driver Winner {get; set;}
+        public List<Driver> Participants {get; set;} = new List<Driver>();
+       
+              
+    }
+}
