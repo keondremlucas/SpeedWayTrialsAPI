@@ -6,17 +6,15 @@ namespace Web
 {
     public class Driver
     {
-        public Guid Id {get; set;}
+        public Guid Id { get; set; }
 
-        public string FirstName {get; set;}
-        public string LastName {get; set;}
-        public int Age {get; set;}
-        public string Nickname {get; set;}
-        [JsonIgnore]
-        public List<Racecar> Cars {get; set;} 
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public string Nickname { get; set; }
         [JsonIgnore]
         [InverseProperty("Winner")]
-        public List<Race> RacesWon {get; set;} 
+        public List<Race> RacesWon { get; set; }
         // [JsonIgnore]
 
         // public List<Race> RacesLost {get; set;} 
@@ -25,8 +23,8 @@ namespace Web
 
         }
         public Driver(DriverDto driverdto)
-        {   
-            Id = new();
+        {
+            Id = Guid.NewGuid();
             FirstName = driverdto.FirstName;
             LastName = driverdto.LastName;
             Age = driverdto.Age;
@@ -34,7 +32,7 @@ namespace Web
             Cars = new();
             RacesWon = new();
             // RacesLost = new();
-        }   
+        }
     }
 
 }
