@@ -10,6 +10,7 @@ namespace Web
         drag, 
 
         offroad, 
-        stockcar
+        stockcar,
+
     }
 }

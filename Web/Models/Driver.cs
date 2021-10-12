@@ -13,6 +13,18 @@ namespace Web
         public List<Racecar> Cars {get; set;} = new List<Racecar>();
         public List<Race> RacesWon {get; set;} = new List<Race>();
         public List<Race> RacesLost {get; set;} = new List<Race>();
-              
+        public Driver()
+        {
+
+        }
+        public Driver(DriverDto driverdto)
+        {   
+            Id = new();
+            FirstName = driverdto.FirstName;
+            LastName = driverdto.LastName;
+            Age = driverdto.Age;
+            Nickname = driverdto.Nickname;
+        }   
     }
+
 }

@@ -12,6 +12,18 @@ namespace Web
         public int TopSpeed {get; set;}
         
         public CarType Type {get; set;}
+        public Racecar()
+        {
+
+        }
+        public Racecar(RacecarDto racecardto)
+        {   
+            Id = new();
+            Nickname = racecardto.Nickname;
+            Model = racecardto.Model;
+            TopSpeed = racecardto.TopSpeed;
+            Type = racecardto.Type;
+        } 
        
               
     }
