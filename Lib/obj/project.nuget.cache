@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "95kRO2WEWN6sRfjxDxVAnmxln+jjKyRrfrlwKyUdb2a7gP8Xn+obqY/Mx16u2V/cstJc5MXpPgcngNvWKAeRww==",
+  "dgSpecHash": "osHwYhN1pQcogkTKtrmXbqu0OL8GxAh8ldHwiTfNf0g3CcfRvCkTwXRREx5FKYdDmTyWoIdS5eN/f1aM63a/Ew==",
   "success": true,
-  "projectFilePath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

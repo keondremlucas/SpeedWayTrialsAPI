@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 namespace Web
 {
     public class Driver
@@ -10,9 +12,14 @@ namespace Web
         public string LastName {get; set;}
         public int Age {get; set;}
         public string Nickname {get; set;}
-        public List<Racecar> Cars {get; set;} = new List<Racecar>();
-        public List<Race> RacesWon {get; set;} = new List<Race>();
-        public List<Race> RacesLost {get; set;} = new List<Race>();
+        [JsonIgnore]
+        public List<Racecar> Cars {get; set;} 
+        [JsonIgnore]
+        [InverseProperty("Winner")]
+        public List<Race> RacesWon {get; set;} 
+        // [JsonIgnore]
+
+        // public List<Race> RacesLost {get; set;} 
         public Driver()
         {
 
@@ -24,6 +31,9 @@ namespace Web
             LastName = driverdto.LastName;
             Age = driverdto.Age;
             Nickname = driverdto.Nickname;
+            Cars = new();
+            RacesWon = new();
+            // RacesLost = new();
         }   
     }
 

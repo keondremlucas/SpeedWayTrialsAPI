@@ -16,5 +16,7 @@ namespace Web
         [Required]
         
         public string Nickname {get; set;}
+
+        
     }
 }
