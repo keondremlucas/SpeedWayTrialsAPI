@@ -9,7 +9,7 @@ namespace Web
         public string Name {get; set;}
         public RaceCategory Category {get; set;}
         public DateTime Date {get; set;}
-        public Time BestTime {get; set;}
+        public TimeSpan BestTime {get; set;}
         public Driver Winner {get; set;}
         public List<Driver> Participants {get; set;} = new List<Driver>();
        

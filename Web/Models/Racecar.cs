@@ -1,3 +1,4 @@
+using System;
 namespace Web
 {
     public class Racecar
@@ -9,7 +10,8 @@ namespace Web
         public Driver Owner {get; set;}
         public string Status {get; set;}
         public int TopSpeed {get; set;}
-        public string Type {get; set;}
+        
+        public CarType Type {get; set;}
        
               
     }

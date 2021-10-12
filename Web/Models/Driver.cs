@@ -11,8 +11,8 @@ namespace Web
         public int Age {get; set;}
         public string Nickname {get; set;}
         public List<Racecar> Cars {get; set;} = new List<Racecar>();
-        public List<Races> RacesWon {get; set;} = new List<Races>();
-        public List<Races> RacesLost {get; set;} = new List<Races>();
+        public List<Race> RacesWon {get; set;} = new List<Race>();
+        public List<Race> RacesLost {get; set;} = new List<Race>();
               
     }
 }
