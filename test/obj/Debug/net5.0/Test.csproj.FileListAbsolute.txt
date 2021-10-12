@@ -145,3 +145,6 @@ c:\Users\lucas\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\test.dll
 c:\Users\lucas\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\ref\test.dll
 c:\Users\lucas\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\test.pdb
 c:\Users\lucas\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\test.genruntimeconfig.cache
+c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\Test.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\ref\Test.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\Test.pdb

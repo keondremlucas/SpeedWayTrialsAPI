@@ -10,3 +10,15 @@ C:\Users\lucas\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.csproj.CoreCompileInpu
 C:\Users\lucas\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.dll
 C:\Users\lucas\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\ref\Lib.dll
 C:\Users\lucas\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.pdb
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\bin\Debug\net5.0\Lib.deps.json
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\bin\Debug\net5.0\Lib.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\bin\Debug\net5.0\ref\Lib.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\bin\Debug\net5.0\Lib.pdb
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.csproj.AssemblyReference.cache
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.AssemblyInfoInputs.cache
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.AssemblyInfo.cs
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.csproj.CoreCompileInputs.cache
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\ref\Lib.dll
+c:\Users\LTIUser\SpeedWayTrialsAPI\Lib\obj\Debug\net5.0\Lib.pdb
