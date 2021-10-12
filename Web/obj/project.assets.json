@@ -569,6 +569,9 @@
       "Lib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.2"
+        },
         "compile": {
           "bin/placeholder/Lib.dll": {}
         },
@@ -1522,19 +1525,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LTIUser\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "C:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj",
-      "packagesPath": "C:\\Users\\LTIUser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\obj\\",
+      "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LTIUser\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1546,8 +1549,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
-              "projectPath": "C:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
+            "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+              "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
             }
           }
         }
@@ -1607,7 +1610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

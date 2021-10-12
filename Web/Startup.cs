@@ -11,7 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql;
+
 
 
 namespace Web
@@ -31,10 +31,8 @@ namespace Web
             var connectionString = Configuration.GetConnectionString("Default");
             var serverVersion = ServerVersion.AutoDetect(connectionString);
             // services.AddScoped<IWarehouseRepository, WarehouseRepository>();
-            services.AddDbContext<Database>(ParallelOptions => ParallelOptions.UseSqlite(Configuration.GetConnectionString("Default")));
-            services.AddControllers();
             services.AddDbContextPool<Database>(
-           options => options.UseMySql(Configuration.GetConnectionString("MysqlConnection"), serverVersion));
+            options => options.UseMySql(Configuration.GetConnectionString("MysqlConnection"), serverVersion));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web", Version = "v1" });

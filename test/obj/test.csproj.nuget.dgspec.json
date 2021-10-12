@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Test\\Test.csproj": {}
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {}
   },
   "projects": {
-    "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
         "projectName": "Lib",
-        "projectPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
-        "packagesPath": "C:\\Users\\LTIUser\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTIUser\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Test\\Test.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\LTIUser\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Test\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTIUser\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -78,8 +84,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
-                "projectPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj"
+              "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
+                "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj"
               }
             }
           }
@@ -138,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\LTIUser\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Web\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LTIUser\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -164,8 +170,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
-                "projectPath": "c:\\Users\\LTIUser\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
+              "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+                "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
               }
             }
           }
@@ -198,6 +204,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -221,7 +231,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,7 +29,6 @@ namespace Web
             LastName = driverdto.LastName;
             Age = driverdto.Age;
             Nickname = driverdto.Nickname;
-            Cars = new();
             RacesWon = new();
             // RacesLost = new();
         }

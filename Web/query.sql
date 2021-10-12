@@ -1,6 +1,7 @@
--- INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 0, "Ricky", "Bobby", 30, "LaFlame" );
--- INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 1, "Fred", "Tom", 33, "Freddie" );
--- INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 2, "Alex", "Southern", 33, "King" );
+CREATE TABLE DRIVERS (Id = , FirstName, LastName, Age, Nickname);
+INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 0, "Ricky", "Bobby", 30, "LaFlame" );
+INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 1, "Fred", "Tom", 33, "Freddie" );
+INSERT INTO DRIVERS (Id, FirstName, LastName, Age, Nickname) VALUES ( 2, "Alex", "Southern", 33, "King" );
 
 -- INSERT INTO RACECARS (Id, Nickname, Model, Status, TopSpeed, Type) VALUES ( 0, "Car 1", 0, "Available", 350, 0 );
 -- INSERT INTO RACECARS (Id, Nickname, Model, Status, TopSpeed, Type) VALUES ( 1, "Car 2", 0, "Available", 400, 0 );

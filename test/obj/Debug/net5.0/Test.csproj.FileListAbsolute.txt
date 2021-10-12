@@ -148,3 +148,5 @@ c:\Users\lucas\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\test.genruntimeconfig.cac
 c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\Test.dll
 c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\ref\Test.dll
 c:\Users\LTIUser\SpeedWayTrialsAPI\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\lucas\SpeedWayTrialsAPI\Test\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\lucas\SpeedWayTrialsAPI\Test\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
