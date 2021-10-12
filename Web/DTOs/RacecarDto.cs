@@ -5,7 +5,6 @@ namespace Web
     public class RacecarDto
     {
         [Required]
-        [MinLength(3)]
         public string Nickname {get; set;}
         [Required]
         public  CarModel Model {get; set;}
@@ -13,7 +12,6 @@ namespace Web
         public string Status {get; set;}
 
         [Required]
-        [MinLength(3)]
         public int TopSpeed {get; set;}
 
         [Required]
