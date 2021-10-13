@@ -1,11 +1,14 @@
 using System;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+
 namespace Web
 {
     public class PopulateDatabase
     {
         public static void Populate(Database db)
-        {  
+        {   
+           
             Driver driver2 = new Driver(){ FirstName = "Timmy", LastName = "Lobby", Age = 30, Nickname = "LaAqua"};
             Driver driver = new Driver(){ FirstName = "Ricky", LastName = "Bobby", Age = 30, Nickname = "LaFlame"};
             Racecar racecar = new Racecar(){ Nickname = "Lightning", Model = CarModel.Nissan, Owner = driver, Status = "Available", TopSpeed = 400, Type = CarType.compact};
@@ -14,6 +17,7 @@ namespace Web
             db.Drivers.Add(driver);
             db.Races.Add(race);
             db.SaveChanges();
+            Console.WriteLine($"{driver.Id}");
         }
        
     }

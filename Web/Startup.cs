@@ -28,11 +28,11 @@ namespace Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = Configuration.GetConnectionString("Default");
+            var connectionString = Configuration.GetConnectionString("Mysqlconnection");
             var serverVersion = ServerVersion.AutoDetect(connectionString);
             // services.AddScoped<IWarehouseRepository, WarehouseRepository>();
-            services.AddDbContextPool<Database>(
-            options => options.UseMySql(Configuration.GetConnectionString("MysqlConnection"), serverVersion));
+            services.AddDbContext<Database>(
+            options => options.UseMySql(Configuration.GetConnectionString("Mysqlconnection"),serverVersion));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web", Version = "v1" });
