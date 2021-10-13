@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LvlDszhbmzaAcSpmSJ/RzwZECxGVP4bx2/sCuL3w+fjWtxlTHOObb948qC5zRpNutHanMB4RF8kz9p4i3a/wSw==",
+  "dgSpecHash": "sKGyNE3WgnI+EAyKagfg2gQ863bzIA+6VTiEGR+SFVk/LKZ7R3gXvl4YCihduEU+htmCxOG1sHWnU1iHIxAUwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+  "projectFilePath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",
