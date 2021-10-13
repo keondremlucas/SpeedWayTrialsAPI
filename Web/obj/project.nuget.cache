@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7CD2KrRtKvvTS73X+tbTG/DBRH6ZoxNsIafkkReaESMYJlIbeoCFor/S45dmwEXMgP7izRWLTjpez4NKofhoGA==",
+  "dgSpecHash": "GMSgIeSpNg5NEALZL3qtuBXX0x9+MUeBABGvnCKkaPgoz0MCiD/oqYgwDg73JbCem1pWYTExAMRCRjsHdkV2VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+  "projectFilePath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
