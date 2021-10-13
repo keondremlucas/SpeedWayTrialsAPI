@@ -27,16 +27,16 @@ namespace Web
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            var connectionString = Configuration.GetConnectionString("Mysqlconnection");
-            var serverVersion = ServerVersion.AutoDetect(connectionString);
-            // services.AddScoped<IWarehouseRepository, WarehouseRepository>();
-            services.AddDbContext<Database>(
-            options => options.UseMySql(Configuration.GetConnectionString("Mysqlconnection"),serverVersion));
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web", Version = "v1" });
-            });
+        {   
+
+            // var connectionString = Configuration.GetConnectionString("Mysqlconnection");
+            var connectionString = Environment.GetEnvironmentVariable("PG_CONN_STRING");
+            Console.WriteLine($"Connection String: {connectionString}");
+            // var serverVersion = ServerVersion.AutoDetect(connectionString);
+            services.AddDbContext<Database>(options => options.UseNpgsql(connectionString));
+            services.AddScoped<IWebRepository, WebRepository>();
+        
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

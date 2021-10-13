@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Web;
 
 namespace Web.Migrations
@@ -14,33 +15,29 @@ namespace Web.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.10");
+                .HasAnnotation("Relational:MaxIdentifierLength", 63)
+                .HasAnnotation("ProductVersion", "5.0.10")
+                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
             modelBuilder.Entity("Web.Driver", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("uuid");
 
                     b.Property<int>("Age")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("FirstName")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("Nickname")
-                        .HasColumnType("longtext");
-
-                    b.Property<Guid?>("RaceId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RaceId");
 
                     b.ToTable("Drivers");
                 });
@@ -49,26 +46,24 @@ namespace Web.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("uuid");
 
                     b.Property<TimeSpan?>("BestTime")
-                        .HasColumnType("time(6)");
+                        .HasColumnType("interval");
 
                     b.Property<int>("Category")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("Date")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
-                    b.Property<Guid?>("WinnerId")
-                        .HasColumnType("char(36)");
+                    b.Property<string>("Winner")
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("WinnerId");
 
                     b.ToTable("Races");
                 });
@@ -77,47 +72,31 @@ namespace Web.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("uuid");
 
                     b.Property<int>("Model")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("Nickname")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<Guid?>("OwnerId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Status")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<int>("TopSpeed")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Type")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OwnerId");
 
                     b.ToTable("Racecars");
-                });
-
-            modelBuilder.Entity("Web.Driver", b =>
-                {
-                    b.HasOne("Web.Race", null)
-                        .WithMany("Participants")
-                        .HasForeignKey("RaceId");
-                });
-
-            modelBuilder.Entity("Web.Race", b =>
-                {
-                    b.HasOne("Web.Driver", "Winner")
-                        .WithMany("RacesWon")
-                        .HasForeignKey("WinnerId");
-
-                    b.Navigation("Winner");
                 });
 
             modelBuilder.Entity("Web.Racecar", b =>
@@ -127,16 +106,6 @@ namespace Web.Migrations
                         .HasForeignKey("OwnerId");
 
                     b.Navigation("Owner");
-                });
-
-            modelBuilder.Entity("Web.Driver", b =>
-                {
-                    b.Navigation("RacesWon");
-                });
-
-            modelBuilder.Entity("Web.Race", b =>
-                {
-                    b.Navigation("Participants");
                 });
 #pragma warning restore 612, 618
         }

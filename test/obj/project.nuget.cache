@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dX3V6oyIKNAZHWhf2Jzycs/jQv6OfnZ6sUpF/h420ORuBXmRN2OBy6ts6mYZdmCFq4ahcf4O7pJV3vsym/inYA==",
+  "dgSpecHash": "9Jzrf7PCFlM5tgucWKoe9C9syYQBXZSQKH2ji2xoGANy49Qsj4AhtOwlZIwU42sKj1iAAG8jhrYZ+l0AfUgETg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

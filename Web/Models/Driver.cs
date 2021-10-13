@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 namespace Web
 {
@@ -12,12 +14,10 @@ namespace Web
         public string LastName { get; set; }
         public int Age { get; set; }
         public string Nickname { get; set; }
-        [JsonIgnore]
-        [InverseProperty("Winner")]
-        public List<Race> RacesWon { get; set; }
-        // [JsonIgnore]
-
-        // public List<Race> RacesLost {get; set;} 
+        [NotMapped]
+        public List<string> RacesWon { get; set; } = new();
+        [NotMapped]
+        public List<string> RacesLost {get; set;} = new();
         public Driver()
         {
 

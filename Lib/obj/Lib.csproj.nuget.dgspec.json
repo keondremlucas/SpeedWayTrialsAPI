@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {}
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
         "projectName": "Lib",
-        "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.2, )"

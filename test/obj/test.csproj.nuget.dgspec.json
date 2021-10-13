@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {}
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
         "projectName": "Lib",
-        "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
-                "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj"
+              "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
+                "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\Web.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -170,8 +170,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
-                "projectPath": "c:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
+              "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
+                "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj"
               }
             }
           }

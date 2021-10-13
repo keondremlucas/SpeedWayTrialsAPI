@@ -18,22 +18,17 @@ namespace Web
         public static void Main(string[] args)
         {   
          
-           var host = CreateWebHostBuilder(args).Build();
+           CreateHostBuilder(args).Build().Run();
            
-           using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
- 
-                var context = services.GetRequiredService<Database>();
-
-                PopulateDatabase.Populate(context);
-            }
-            host.Run();
+           
 
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

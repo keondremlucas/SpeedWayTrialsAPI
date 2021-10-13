@@ -38,12 +38,12 @@ namespace test
         {   
             Driver driver = new Driver(){ FirstName = "Ricky", LastName = "Bobby", Age = 30, Nickname = "LaFlame"};
             Driver driver2 = new Driver(){ FirstName = "Ricky", LastName = "Lobby", Age = 30, Nickname = "LaFlame"};
-            Race race = new Race() {Name = "GrandPrix", Category = RaceCategory.tour, Date = DateTime.Parse("5/1/2021"), BestTime = TimeSpan.Parse("5.8:32:16"), Winner = driver, Participants = {driver, driver2}};
+            Race race = new Race() {Name = "GrandPrix", Category = RaceCategory.tour, Date = DateTime.Parse("5/1/2021"), BestTime = TimeSpan.Parse("5.8:32:16"), Winner = "LaAqua", Participants = {"LaAqua", "LaFlame"}};
             race.Name.Should().Be("GrandPrix");
             race.Category.Should().Be(RaceCategory.tour);
             race.Date.Should().Be(DateTime.Parse("5/1/2021"));
             race.BestTime.Should().Be(TimeSpan.Parse("5.8:32:16"));
-            race.Winner.Should().Be(driver);
+            race.Winner.Should().Be("LaAqua");
             race.Participants.Should().HaveCount(2);
             
         }

@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 namespace Web
 {
@@ -12,10 +15,10 @@ namespace Web
         public DateTime? Date { get; set; }
         public TimeSpan? BestTime { get; set; }
         [JsonIgnore]
-        public Driver Winner { get; set; }
+        public string Winner { get; set; }
 
-        [JsonIgnore]
-        public List<Driver> Participants { get; set; } = new List<Driver>();
+        [NotMapped]
+        public List<string> Participants { get; set; } = new();
         public Race()
         {
 
