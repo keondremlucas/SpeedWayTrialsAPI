@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {}
+    "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj": {
+    "C:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj",
         "projectName": "Lib",
-        "projectPath": "c:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWay\\Lib\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWay\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -66,14 +66,14 @@
         }
       }
     },
-    "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {
+    "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
+        "projectPath": "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucas\\SpeedWay\\Web\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWay\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj": {
-                "projectPath": "c:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj"
+              "C:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj": {
+                "projectPath": "C:\\Users\\lucas\\SpeedWay\\Lib\\Lib.csproj"
               }
             }
           }

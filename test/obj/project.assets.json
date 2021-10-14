@@ -8043,11 +8043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\lucas\\SpeedWay\\test\\test.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\SpeedWay\\test\\test.csproj",
       "projectName": "test",
-      "projectPath": "c:\\Users\\lucas\\SpeedWay\\test\\test.csproj",
+      "projectPath": "C:\\Users\\lucas\\SpeedWay\\test\\test.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\lucas\\SpeedWay\\test\\obj\\",
+      "outputPath": "C:\\Users\\lucas\\SpeedWay\\test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8062,8 +8062,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {
-              "projectPath": "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj"
+            "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj": {
+              "projectPath": "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj"
             }
           }
         }

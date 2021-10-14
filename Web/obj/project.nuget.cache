@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Upy3N+GHUj/dEveco6BISGfYMr16j68KyfAUZkr2eu5MVpI3OeDY3+Wh49hTtCSyFZ58KU6Vt/WhJpBRvpGJ+g==",
+  "dgSpecHash": "WXipMVknDJtwXHk24H7aPP1/6hvxWaOn3AVIxuJCZyG50GDzlcEjOlgHqbV+VvN+rReZ69yeTuif6j9TCWmerw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\SpeedWay\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
