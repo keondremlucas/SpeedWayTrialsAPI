@@ -1,3 +1,2 @@
 #SpeedWayTrialAPI
-
-Changes 
+ Added to the api
