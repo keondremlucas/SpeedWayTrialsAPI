@@ -8,61 +8,55 @@ namespace test
 {
     public class RacecarDtoTest
     {
-         [Fact]
-         public void ShouldCreateRacecarFromDto()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "Lightning", Model = CarModel.Nissan, Status = "Available", TopSpeed = 400, Type = CarType.compact};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
+        RacecarDto workingCarDto = new RacecarDto() { Nickname = "Lightning", Model = CarModel.Nissan, Status = CarStatus.Available, TopSpeed = 400, Type = CarType.compact };
+        [Fact]
+        public void ShouldCreateRacecarFromDto()
+        {
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
             act.Should().NotThrow();
         }
 
-         [Fact]
-         public void ShouldNotCreateRacecarFromDtoNickname()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "", Model = CarModel.Nissan, Status = "Available", TopSpeed = 400, Type = CarType.compact};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
+        [Fact]
+        public void ShouldNotCreateRacecarFromDtoNickname()
+        {
+            workingCarDto.Nickname = "";
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
             act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("required"));
         }
 
-         [Fact]
-         public void ShouldNotCreateRacecarFromDtoModel()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "Lightning", Model = (CarModel)9, Status = "Available", TopSpeed = 400, Type = CarType.compact};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
+        [Fact]
+        public void ShouldNotCreateRacecarFromDtoModel()
+        {
+            workingCarDto.Model = (CarModel)9;
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
             act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("invalid"));
         }
         [Fact]
-         public void ShouldNotCreateRacecarFromDtoStatus()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "Lightning", Model = (CarModel)5, Status = "", TopSpeed = 400, Type = CarType.compact};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
-            act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("required"));
+        public void ShouldNotCreateRacecarFromDtoStatus()
+        {
+            workingCarDto.Status = (CarStatus)3;
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
+            act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("invalid"));
         }
         [Fact]
-         public void ShouldNotCreateRacecarFromTopSpeed()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "Lightning", Model = (CarModel)5, Status = "Available", TopSpeed = 400, Type = CarType.compact};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
+        public void ShouldNotCreateRacecarFromTopSpeed()
+        {
+            workingCarDto.TopSpeed = 200;
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
             act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("TopSpeed"));
         }
 
         [Fact]
-         public void ShouldNotCreateRacecarFromModel()
-        {   
-
-            RacecarDto dto = new RacecarDto(){ Nickname = "Lightning", Model = (CarModel)5, Status = "Available", TopSpeed = 400, Type = (CarType)8};
-            var context = new ValidationContext(dto);
-            Action act = () => Validator.ValidateObject(dto, context, true);
+        public void ShouldNotCreateRacecarFromType()
+        {
+            workingCarDto.Type = (CarType)8;
+            var context = new ValidationContext(workingCarDto);
+            Action act = () => Validator.ValidateObject(workingCarDto, context, true);
             act.Should().Throw<ValidationException>().Where(e => e.Message.Contains("invalid"));
         }
     }

@@ -5,21 +5,22 @@ namespace Web
     public class RacecarDto
     {
         [Required]
-        public string Nickname {get; set;}
+        public string Nickname { get; set; }
         [Required]
-        [EnumDataType(typeof(CarModel))] 
-        public  CarModel Model {get; set;}
+        [EnumDataType(typeof(CarModel))]
+        public CarModel Model { get; set; }
         [Required]
-        public string Status {get; set;}
+        [EnumDataType(typeof(CarStatus))]
+        public CarStatus Status { get; set; }
 
         [Required]
-        [Range(300,600)]
-        public int TopSpeed {get; set;}
+        [Range(300, 600)]
+        public int TopSpeed { get; set; }
 
         [Required]
-        [EnumDataType(typeof(CarType))] 
-        public CarType Type {get; set;}
+        [EnumDataType(typeof(CarType))]
+        public CarType Type { get; set; }
     }
 
-    
+
 }
