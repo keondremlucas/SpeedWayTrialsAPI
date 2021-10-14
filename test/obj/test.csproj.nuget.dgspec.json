@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {}
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\test\\test.csproj": {}
   },
   "projects": {
     "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Lib\\Lib.csproj": {
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj": {
+    "C:\\Users\\lucas\\SpeedWayTrialsAPI\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
-        "projectName": "Test",
-        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\test\\test.csproj",
+        "projectName": "test",
+        "projectPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\test\\test.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\Test\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\SpeedWayTrialsAPI\\test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
