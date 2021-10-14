@@ -19,6 +19,21 @@ namespace Web.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+            modelBuilder.Entity("DriverRace", b =>
+                {
+                    b.Property<Guid>("ParticipantsId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RacesLostId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("ParticipantsId", "RacesLostId");
+
+                    b.HasIndex("RacesLostId");
+
+                    b.ToTable("DriverRace");
+                });
+
             modelBuilder.Entity("Web.Driver", b =>
                 {
                     b.Property<Guid>("Id")
@@ -60,10 +75,12 @@ namespace Web.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<string>("Winner")
-                        .HasColumnType("text");
+                    b.Property<Guid?>("WinnerId")
+                        .HasColumnType("uuid");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("WinnerId");
 
                     b.ToTable("Races");
                 });
@@ -83,8 +100,8 @@ namespace Web.Migrations
                     b.Property<Guid?>("OwnerId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Status")
-                        .HasColumnType("text");
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
 
                     b.Property<int>("TopSpeed")
                         .HasColumnType("integer");
@@ -99,13 +116,44 @@ namespace Web.Migrations
                     b.ToTable("Racecars");
                 });
 
+            modelBuilder.Entity("DriverRace", b =>
+                {
+                    b.HasOne("Web.Driver", null)
+                        .WithMany()
+                        .HasForeignKey("ParticipantsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Web.Race", null)
+                        .WithMany()
+                        .HasForeignKey("RacesLostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Web.Race", b =>
+                {
+                    b.HasOne("Web.Driver", "Winner")
+                        .WithMany("RacesWon")
+                        .HasForeignKey("WinnerId");
+
+                    b.Navigation("Winner");
+                });
+
             modelBuilder.Entity("Web.Racecar", b =>
                 {
                     b.HasOne("Web.Driver", "Owner")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("OwnerId");
 
                     b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Web.Driver", b =>
+                {
+                    b.Navigation("Cars");
+
+                    b.Navigation("RacesWon");
                 });
 #pragma warning restore 612, 618
         }

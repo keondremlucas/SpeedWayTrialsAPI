@@ -13,11 +13,16 @@ namespace Web
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
+        
         public string Nickname { get; set; }
-        [NotMapped]
-        public List<string> RacesWon { get; set; } = new();
-        [NotMapped]
-        public List<string> RacesLost {get; set;} = new();
+        [JsonIgnore]
+        [InverseProperty("Owner")]
+        public List<Racecar> Cars {get; set;} = new();
+        [JsonIgnore]
+        [InverseProperty("Winner")]
+        public List<Race> RacesWon { get; set; } = new();
+        [JsonIgnore]
+        public List<Race> RacesLost {get; set;} = new();
         public Driver()
         {
 

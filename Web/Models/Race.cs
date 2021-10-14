@@ -15,10 +15,10 @@ namespace Web
         public DateTime? Date { get; set; }
         public TimeSpan? BestTime { get; set; }
         [JsonIgnore]
-        public string Winner { get; set; }
+        public Driver Winner { get; set; }
 
-        [NotMapped]
-        public List<string> Participants { get; set; } = new();
+        [JsonIgnore]
+        public List<Driver> Participants { get; set; } = new();
         public Race()
         {
 
