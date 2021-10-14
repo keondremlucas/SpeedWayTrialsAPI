@@ -23,11 +23,11 @@ namespace test
         public void ShouldCreateARaceCar()
         {   
             Driver driver = new Driver(){ FirstName = "Ricky", LastName = "Bobby", Age = 30, Nickname = "LaFlame"};
-            Racecar racecar = new Racecar(){ Nickname = "Lightning", Model = CarModel.Nissan, Owner = driver, Status = "Available", TopSpeed = 400, Type = CarType.compact};
+            Racecar racecar = new Racecar(){ Nickname = "Lightning", Model = CarModel.Nissan, Owner = driver, Status = 0, TopSpeed = 400, Type = CarType.compact};
             racecar.Nickname.Should().Be("Lightning");
             racecar.Model.Should().Be(CarModel.Nissan);
             racecar.Owner.Should().Be(driver);
-            racecar.Status.Should().Be("Available");
+            racecar.Status.Should().Be(0);
             racecar.TopSpeed.Should().Be(400);;
           
             
