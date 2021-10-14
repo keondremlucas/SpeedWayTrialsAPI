@@ -2,9 +2,9 @@ name: .NET
 
 on:
   push:
-    branches: [ herokuDeploy ]
+    branches: [ master ]
   pull_request:
-    branches: [ herokuDeploy ]
+    branches: [ master ]
 
 jobs:
   build:
